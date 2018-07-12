@@ -1,0 +1,33 @@
+/*
+Colors:
+#4abbbf (teal)
+#ecf2f0 (white)
+#aeaeae (gray)
+#203a4b (navy)
+#86bc8b (green)
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+* {
+  box-sizing: border-box;
+  font-family: Roboto, Helvetica, "Trebuchet MS", Arial, sans-serif;
+}
+
+header {
+    background-color: #4abbbf;
+    text-align: center;
+    color: #ecf2f0;
+    padding: 20px 10px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+header h2 {
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.444rem;
+}
