@@ -5,6 +5,9 @@ Colors:
 #aeaeae (gray)
 #203a4b (navy)
 #86bc8b (green)
+#f2e07c (yellow)
+#f48d6c (orange)
+#f16663 (red)
 */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
@@ -100,4 +103,48 @@ input[type="checkbox"]:focus {
 
 .table .form-control {
     font-size: .75rem;
+}
+
+.table .table-desc {
+    text-align: center;
+}
+
+.table tbody td[contenteditable]:focus {
+    outline: 0;
+    border-color: #80bdff;
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+}
+
+.table tfoot #table-total {
+    text-align: right;
+    color: #86bc8b;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.table tfoot .money-input {
+    font-size: 1.25rem;
+}
+
+#savings .section-heading {
+    background-color: #f2e07c;
+}
+
+#savings-goals .section-heading {
+    background-color: #f48d6c;
+}
+
+#summary {
+    background-color: #f16663;
+    color: #ecf2f0;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+footer {
+    background-color: #2a7375;
+    text-align: center;
+    color: #ecf2f0;
+    padding: 20px 10px;
 }
