@@ -31,3 +31,27 @@ header h2 {
     font-size: 1rem;
     letter-spacing: 0.444rem;
 }
+
+.section-heading {
+    text-transform: uppercase;
+    color: #ecf2f0;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+#checking .section-heading {
+    background-color: #203a4b;
+}
+
+.money-input {
+    display: block;
+}
+
+.money-input::before {
+    content: "$ ";
+}
+
+.money-input input {
+    display: inline-block;
+    width: 90%;
+}
