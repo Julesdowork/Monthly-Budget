@@ -6,16 +6,8 @@ $(document).ready(function() {
         console.log($month.val());
     });
 
-    let $checkingStart = $("#checking-starting");
-    let $checkingEnd = $("#checking-ending");
-
-    $checkingStart.change((e) => {
-        let inputVal = e.target.value;
-        let patt = /^(([1-9]\d*)?\d)(\.\d{0,2})?$/  // finds dollar amounts
-        if (!patt.test(inputVal)) {
-            console.log("Invalid input. Please only use numbers and '.'");
-        }
-    })
+    let moneyInputs = getMoneyInputsArray();
+    // console.log(moneyInputs);
 });
 
 function getInitialMonth() {
@@ -25,4 +17,23 @@ function getInitialMonth() {
     currentMonth = currentMonth < 10 ? "0" + currentMonth : currentMonth;
     monthStr += currentMonth;
     return monthStr;
+}
+
+function getMoneyInputsArray() {
+    let moneyInputs = document.querySelectorAll(".money-input input");
+    moneyInputs = [].slice.call(moneyInputs);   // convert from NodeList to array
+    moneyInputs.forEach(i => {
+        i.addEventListener("change", function(e) {
+            let inputVal = e.target.value;
+            let patt = /^(([1-9]\d*)?\d)(\.\d{0,2})?$/  // finds dollar amounts
+            if (!patt.test(inputVal)) {
+                // console.log("Invalid input. Please only use numbers and '.'");
+                $(this).addClass("invalid-input");
+            } else {
+                $(this).removeClass("invalid-input");
+            }
+        });
+    });
+
+    return moneyInputs
 }

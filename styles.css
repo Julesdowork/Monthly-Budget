@@ -59,6 +59,11 @@ header h2 {
     width: 90%;
 }
 
+.invalid-input {
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
 .table thead th {
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -147,4 +152,9 @@ footer {
     text-align: center;
     color: #ecf2f0;
     padding: 20px 10px;
+}
+
+footer a, footer a:hover, footer a:visited {
+    color: #ecf2f0;
+    text-decoration: none;
 }
