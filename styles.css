@@ -127,8 +127,8 @@ input[type="checkbox"]:focus {
     font-size: 1.5rem;
 }
 
-.table tfoot .money-input {
-    font-size: 1.25rem;
+.table tfoot .money-input input {
+    font-size: 1rem;
 }
 
 #savings .section-heading {
