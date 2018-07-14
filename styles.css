@@ -11,11 +11,38 @@ Colors:
 */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 
+/********** GENERAL STYLES **********/
 * {
   box-sizing: border-box;
   font-family: Roboto, Helvetica, "Trebuchet MS", Arial, sans-serif;
 }
 
+.section-heading {
+    text-transform: uppercase;
+    color: #ecf2f0;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.money-input {
+    display: block;
+}
+
+.money-input::before {
+    content: "$ ";
+}
+
+.money-input input {
+    display: inline-block;
+    width: 90%;
+}
+
+.invalid-input {
+    border-color: #dc3545;
+    color: #dc3545;
+}
+
+/********** HEADER STYLES **********/
 header {
     background-color: #4abbbf;
     text-align: center;
@@ -35,33 +62,10 @@ header h2 {
     letter-spacing: 0.444rem;
 }
 
-.section-heading {
-    text-transform: uppercase;
-    color: #ecf2f0;
-    font-weight: 400;
-    font-size: 2rem;
-}
+/********** #CHECKING STYLES **********/
 
 #checking .section-heading {
     background-color: #203a4b;
-}
-
-.money-input {
-    display: block;
-}
-
-.money-input::before {
-    content: "$ ";
-}
-
-.money-input input {
-    display: inline-block;
-    width: 90%;
-}
-
-.invalid-input {
-    border-color: #dc3545;
-    color: #dc3545;
 }
 
 .table thead th {
@@ -131,13 +135,19 @@ input[type="checkbox"]:focus {
     font-size: 1rem;
 }
 
+/********** #SAVINGS STYLES **********/
+
 #savings .section-heading {
     background-color: #f2e07c;
 }
 
+/********** #SAVINGS-GOALS STYLES **********/
+
 #savings-goals .section-heading {
     background-color: #f48d6c;
 }
+
+/********** #SUMMARY STYLES **********/
 
 #summary {
     background-color: #f16663;
@@ -146,6 +156,8 @@ input[type="checkbox"]:focus {
     text-transform: uppercase;
     text-align: right;
 }
+
+/********** FOOTER STYLES **********/
 
 footer {
     background-color: #2a7375;

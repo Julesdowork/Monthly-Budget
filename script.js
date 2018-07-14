@@ -59,7 +59,6 @@ $(document).ready(function() {
 
     function sumAllInChecking(label, inputs) {
         inputArr = [].slice.call(inputs);
-        console.log(inputArr);
         let inputVals = inputArr.map(input => {
             return +input.value;    // convert to Number
         });
